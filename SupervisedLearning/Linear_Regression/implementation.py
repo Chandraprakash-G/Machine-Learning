@@ -16,7 +16,7 @@ class LinearRegression():
     return np.dot(X,self.W)+self.b
   
   def r2(self,X,y):
-    y_ = predict(self,X)
+    y_ = self.predict(self,X)
     rss = np.sum((y-y_)**2)
     tss = np.sum((y-y.mean())**2)
     r2 = (1- rss/tss)
