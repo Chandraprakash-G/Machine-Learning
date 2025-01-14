@@ -6,6 +6,8 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.chains.question_answering import load_qa_chain
 from langchain.chat_models import ChatOpenAI
 from langchain.vectorstores import FAISS
+from dotenv import load_dotenv
+load_dotenv()
 
 # App title
 st.title("PDF File Analyzer")
